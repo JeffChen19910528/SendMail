@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnSend
+            // 
+            this.btnSend.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSend.Location = new System.Drawing.Point(61, 56);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(161, 90);
+            this.btnSend.TabIndex = 0;
+            this.btnSend.Text = "發信";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(848, 531);
+            this.Controls.Add(this.btnSend);
+            this.Name = "Form1";
+            this.Text = "發信測試";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSend;
     }
 }
 
